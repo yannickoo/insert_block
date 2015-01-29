@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Main file of Insert Block module.
+ */
+
+/**
+ * Implements of hook_help().
+ */
+function insert_block_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#insert_block':
+      return t('<p>Use special tags to insert the contents of a block into a node.</p><p>You may use [block:<em>block_entity_id</em>] tags to display the contents of block. To discover block entity ID, visit admin/structure/block and hover over a block\'s configure link and look in your browser\'s status bar. The last "word" you see is the block ID.</p>');
+  }
+}

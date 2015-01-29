@@ -1,0 +1,9 @@
+name: Insert Block
+type: module
+description: 'Insert blocks via input filter by using [block:block_entity_id].'
+package: Input filters
+core: 8.x
+
+dependencies:
+  - block
+  - filter
