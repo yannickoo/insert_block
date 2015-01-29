@@ -54,11 +54,11 @@ class InsertBlock extends FilterBase {
    */
   public function tips($long = FALSE) {
     if ($long) {
-      return t('<a name="filter-insert_block"></a>You may use [block:<em>block_entity_id</em>] tags to display the contents of block. To discover block entity id, visit admin/structure/block and hover over a block\'s configure link and look in your browser\'s status bar. The last "word" you see is the block ID.');
+      return $this->t('<a name="filter-insert_block"></a>You may use [block:<em>block_entity_id</em>] tags to display the contents of block. To discover block entity id, visit admin/structure/block and hover over a block\'s configure link and look in your browser\'s status bar. The last "word" you see is the block ID.');
     }
     else {
       return t('You may use <a href="@insert_block_help">[block:<em>block_entity_id</em>] tags</a> to display the contents of block.',
-        array("@insert_block_help" => url('filter/tips/filter_insert_block', array('fragment' => 'filter-insert_block'))));
+        ['@insert_block_help' => url('filter/tips/filter_insert_block', ['fragment' => 'filter-insert_block'])]);
     }
   }
 
