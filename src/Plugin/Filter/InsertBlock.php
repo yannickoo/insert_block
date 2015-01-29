@@ -9,7 +9,6 @@ namespace Drupal\insert_block\Plugin\Filter;
 
 use Drupal\filter\FilterProcessResult;
 use Drupal\filter\Plugin\FilterBase;
-use Drupal\Core\Form\FormStateInterface;
 use Drupal\block\Entity\Block;
 
 /**
