@@ -39,7 +39,6 @@ class InsertBlock extends FilterBase {
 
         if ($block) {
           $replacement = entity_view($block, 'block');
-
           $replacements[] = \Drupal::service('renderer')->render($replacement);
         }
       }
